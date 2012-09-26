@@ -1,6 +1,9 @@
 A log over the steps taken building this example.
 The small notes I´ve written is nothing to care about, just small notes about how I ususally do this.
 
+Pre Req;
+Do run this you will need VS 2010 & SqlExpress
+
 #############################################
 # SETUP
 #############################################
