@@ -1,0 +1,7 @@
+<Modules>
+  <Module PersistentId="557DF73C-ADB2-4CBA-8FC4-E3D6CC4FD704" ModuleId="XSockets.DevServer" />
+  <Module PersistentId="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D" ModuleId="XSocketHandler" />
+  <Module PersistentId="4D5ED374-66D4-445F-B015-286C17CA6D95" ModuleId="XSocketsDemo.Core" />
+  <Module PersistentId="AC1602F7-1429-4306-8DEF-AE1D45ADFC93" ModuleId="XSocketsDemo.Data" />
+  <Module PersistentId="AE00BEF7-38FE-4F4B-8172-D723B72223B8" ModuleId="XSocketsDemo" />
+</Modules>

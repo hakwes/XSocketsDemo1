@@ -1,0 +1,36 @@
+﻿<#@ Template Language="C#" HostSpecific="True" Inherits="DynamicTransform" #>
+<#@ Output Extension="cs" #>
+using XSockets.Plugin.Framework.Attributes;
+using XSockets.Core.Globals;
+using XSockets.Core.XSocket;
+using XSockets.Core.XSocket.Event.Attributes;
+using XSockets.Core.XSocket.Helpers;
+using XSockets.Core.XSocket.Interface;
+
+namespace XSocketHandler.Example
+{
+	[Export(typeof(IXBaseSocket))]    
+	[XBaseSocketMetadata("MyChat", Constants.GenericTextBufferSize)]
+	public class Chat : XBaseSocket
+	{     
+    	[HandlerEvent("OnChatMessage")]
+    	public void OnChatMessage(ChatMessage model)
+    	{        
+    	    //Do some persistence or whatever...      	    
+    	    //The row below makes no sense, it just an example of modelbinding :)          
+    	    this.SendToAll(model,"OnChatMessage");
+    	}
+
+    	public override IXBaseSocket NewInstance()
+    	{
+    	    return new Chat();
+    	}
+	}
+
+    public class ChatMessage
+    {
+        public string UserName { get; set; }
+        public string When { get; set; }
+        public string Message { get; set; }
+    }
+}

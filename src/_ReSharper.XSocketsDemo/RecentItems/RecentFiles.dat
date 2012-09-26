@@ -1,0 +1,48 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="4D5ED374-66D4-445F-B015-286C17CA6D95/f:Fruit.cs" caret="277" fromTop="12" />
+    <File id="4D5ED374-66D4-445F-B015-286C17CA6D95/f:Color.cs" caret="339" fromTop="15" />
+    <File id="AE00BEF7-38FE-4F4B-8172-D723B72223B8/d:Controllers/f:DemoController.cs" caret="0" fromTop="0" />
+    <File id="AE00BEF7-38FE-4F4B-8172-D723B72223B8/f:Global.asax.cs" caret="850" fromTop="26" />
+    <File id="4D5ED374-66D4-445F-B015-286C17CA6D95/f:Person.cs" caret="456" fromTop="20" />
+    <File id="4D5ED374-66D4-445F-B015-286C17CA6D95/f:Gender.cs" caret="84" fromTop="5" />
+    <File id="AC1602F7-1429-4306-8DEF-AE1D45ADFC93/f:EfContext.cs" caret="65" fromTop="3" />
+    <File id="4D5ED374-66D4-445F-B015-286C17CA6D95/f:PersistentEntity.cs" caret="352" fromTop="12" />
+    <File id="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D/d:ViewModel/f:ViewModelBase.cs" caret="352" fromTop="13" />
+    <File id="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D/d:ViewModel/f:ColorViewModel.cs" caret="460" fromTop="17" />
+    <File id="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D/d:ViewModel/f:FruitViewModel.cs" caret="460" fromTop="17" />
+    <File id="557DF73C-ADB2-4CBA-8FC4-E3D6CC4FD704/f:DebugInstance.cs" caret="490" fromTop="12" />
+    <File id="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D/d:ViewModel/f:PersonViewModel.cs" caret="495" fromTop="12" />
+    <File id="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D/f:DemoController.Global.cs" caret="975" fromTop="17" />
+    <File id="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D/f:Commands.cs" caret="1053" fromTop="17" />
+    <File id="AE00BEF7-38FE-4F4B-8172-D723B72223B8/f:ReadMe.txt" caret="4105" fromTop="92" />
+    <File id="AE00BEF7-38FE-4F4B-8172-D723B72223B8/d:Views/d:Shared/f:_Layout.cshtml" caret="362" fromTop="2" />
+    <File id="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D/f:DemoController.cs" caret="529" fromTop="9" />
+    <File id="AC1602F7-1429-4306-8DEF-AE1D45ADFC93/f:DataSeeder.cs" caret="1189" fromTop="31" />
+    <File id="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D/f:DemoController.People.cs" caret="4351" fromTop="39" />
+    <File id="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D/f:LongRunningDemoController.cs" caret="1602" fromTop="1" />
+    <File id="AE00BEF7-38FE-4F4B-8172-D723B72223B8/d:Views/d:Demo/f:Index.cshtml" caret="13361" fromTop="8" />
+    <File id="7020124F-9FFC-4AC3-8F3D-AAB8E0240759/f:scaffolding.config/l:..?..?..?Users?codeplanner?Documents?GitHub?XSocketsDemo1?src?scaffolding.config" caret="0" fromTop="0" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="4D5ED374-66D4-445F-B015-286C17CA6D95/f:Fruit.cs" caret="339" fromTop="15" />
+    <File id="4D5ED374-66D4-445F-B015-286C17CA6D95/f:Color.cs" caret="339" fromTop="15" />
+    <File id="AC1602F7-1429-4306-8DEF-AE1D45ADFC93/f:EfContext.cs" caret="113" fromTop="5" />
+    <File id="AE00BEF7-38FE-4F4B-8172-D723B72223B8/f:Global.asax.cs" caret="849" fromTop="26" />
+    <File id="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D/f:Commands.cs" caret="435" fromTop="13" />
+    <File id="4D5ED374-66D4-445F-B015-286C17CA6D95/f:PersistentEntity.cs" caret="923" fromTop="31" />
+    <File id="4D5ED374-66D4-445F-B015-286C17CA6D95/f:Gender.cs" caret="84" fromTop="5" />
+    <File id="4D5ED374-66D4-445F-B015-286C17CA6D95/f:Person.cs" caret="476" fromTop="21" />
+    <File id="AC1602F7-1429-4306-8DEF-AE1D45ADFC93/f:DataSeeder.cs" caret="1522" fromTop="22" />
+    <File id="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D/d:ViewModel/f:ViewModelBase.cs" caret="352" fromTop="13" />
+    <File id="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D/d:ViewModel/f:PersonViewModel.cs" caret="603" fromTop="14" />
+    <File id="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D/d:ViewModel/f:ColorViewModel.cs" caret="460" fromTop="17" />
+    <File id="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D/d:ViewModel/f:FruitViewModel.cs" caret="460" fromTop="17" />
+    <File id="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D/f:DemoController.People.cs" caret="938" fromTop="23" />
+    <File id="AE00BEF7-38FE-4F4B-8172-D723B72223B8/f:ReadMe.txt" caret="4147" fromTop="42" />
+    <File id="AE00BEF7-38FE-4F4B-8172-D723B72223B8/d:Views/d:Shared/f:_Layout.cshtml" caret="362" fromTop="2" />
+    <File id="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D/f:DemoController.cs" caret="538" fromTop="9" />
+    <File id="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D/f:LongRunningDemoController.cs" caret="2282" fromTop="15" />
+    <File id="AE00BEF7-38FE-4F4B-8172-D723B72223B8/d:Views/d:Demo/f:Index.cshtml" caret="13361" fromTop="8" />
+  </RecentEdits>
+</RecentFiles>
