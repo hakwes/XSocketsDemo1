@@ -1,7 +1,7 @@
 XSocketsDemo1
 =============
 
-A realtime communication SPA based on XSockets.NET, Wijmo, KnockoutJS and EF CF MSSQL as DataSource 
+A realtime communication SPA based on XSockets.NET, Wijmo, KnockoutJS, TwitterBootstrap and EF CF MSSQL as DataSource 
 
 ## What this?
 This project was created on demand from a XSockets.NET user.
