@@ -1,5 +1,5 @@
-2012/09/27-08:52:12.163 15cc Recovering log #15
-2012/09/27-08:52:12.165 15cc Level-0 table #18: started
-2012/09/27-08:52:12.173 15cc Level-0 table #18: 236352 bytes OK
-2012/09/27-08:52:12.180 15cc Delete type=0 #15
-2012/09/27-08:52:12.180 15cc Delete type=3 #13
+2012/09/27-09:34:46.111 11c0 Recovering log #22
+2012/09/27-09:34:46.111 11c0 Level-0 table #24: started
+2012/09/27-09:34:46.132 11c0 Level-0 table #24: 15867 bytes OK
+2012/09/27-09:34:46.140 11c0 Delete type=0 #22
+2012/09/27-09:34:46.141 11c0 Delete type=3 #20

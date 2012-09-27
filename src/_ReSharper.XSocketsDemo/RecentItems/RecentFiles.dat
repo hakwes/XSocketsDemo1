@@ -14,7 +14,6 @@
     <File id="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D/f:Commands.cs" caret="1053" fromTop="17" />
     <File id="AE00BEF7-38FE-4F4B-8172-D723B72223B8/d:js/f:Commands.js" caret="817" fromTop="31" />
     <File id="AE00BEF7-38FE-4F4B-8172-D723B72223B8/d:Views/d:Shared/f:_Layout.cshtml" caret="362" fromTop="2" />
-    <File id="AE00BEF7-38FE-4F4B-8172-D723B72223B8/d:js/f:ViewModel.js" caret="1073" fromTop="18" />
     <File id="AE00BEF7-38FE-4F4B-8172-D723B72223B8/f:ReadMe.txt" caret="4292" fromTop="44" />
     <File id="AE00BEF7-38FE-4F4B-8172-D723B72223B8/f:Global.asax.cs" caret="0" fromTop="0" />
     <File id="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D/f:DemoController.cs" caret="0" fromTop="0" />
@@ -24,7 +23,8 @@
     <File id="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D/f:LongRunningDemoController.cs" caret="0" fromTop="0" />
     <File id="AC1602F7-1429-4306-8DEF-AE1D45ADFC93/f:EfContext.cs" caret="0" fromTop="0" />
     <File id="AC1602F7-1429-4306-8DEF-AE1D45ADFC93/f:DataSeeder.cs" caret="0" fromTop="0" />
-    <File id="AE00BEF7-38FE-4F4B-8172-D723B72223B8/d:Views/d:Demo/f:Index.cshtml" caret="3519" fromTop="0" />
+    <File id="AE00BEF7-38FE-4F4B-8172-D723B72223B8/d:Views/d:Demo/f:Index.cshtml" caret="1239" fromTop="0" />
+    <File id="AE00BEF7-38FE-4F4B-8172-D723B72223B8/d:js/f:ViewModel.js" caret="645" fromTop="13" />
   </RecentFiles>
   <RecentEdits>
     <File id="4D5ED374-66D4-445F-B015-286C17CA6D95/f:Fruit.cs" caret="339" fromTop="15" />
@@ -45,8 +45,8 @@
     <File id="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D/f:DemoController.cs" caret="538" fromTop="9" />
     <File id="4D04395B-5EDA-4C6E-8A07-2092BA20DC3D/f:LongRunningDemoController.cs" caret="2282" fromTop="15" />
     <File id="AE00BEF7-38FE-4F4B-8172-D723B72223B8/d:js/f:Commands.js" caret="817" fromTop="31" />
-    <File id="AE00BEF7-38FE-4F4B-8172-D723B72223B8/d:js/f:ViewModel.js" caret="745" fromTop="7" />
     <File id="AE00BEF7-38FE-4F4B-8172-D723B72223B8/f:ReadMe.txt" caret="4292" fromTop="44" />
     <File id="AE00BEF7-38FE-4F4B-8172-D723B72223B8/d:Views/d:Demo/f:Index.cshtml" caret="17840" fromTop="27" />
+    <File id="AE00BEF7-38FE-4F4B-8172-D723B72223B8/d:js/f:ViewModel.js" caret="645" fromTop="13" />
   </RecentEdits>
 </RecentFiles>

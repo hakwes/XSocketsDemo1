@@ -12,15 +12,6 @@ var Person = function (id, name, age, gender, genderstring, colorid, color, frui
     this.FavoriteColorName = ko.observable(color);
     this.FavoriteFruitId = ko.observable(fruitid);
     this.FavoriteFruitName = ko.observable(fruit);
-
-    this.FemaleCheck = function () {
-        if (this.GenderString() === 'Female') return true;        
-        return false;
-    };
-    this.MaleCheck = function () {        
-        if (this.GenderString() === 'Male') return true;        
-        return false;
-    };
 };
 var ViewModel = {
     People: ko.observableArray([]),
