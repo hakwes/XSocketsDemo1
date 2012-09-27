@@ -90,6 +90,8 @@
     <Content Include="bootstrap\img\glyphicons-halflings.png" />
     <Content Include="bootstrap\js\bootstrap.js" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="js\Commands.js" />
+    <Content Include="js\ViewModel.js" />
     <Content Include="ReadMe.txt" />
     <Content Include="Scripts\jquery-1.7.2.js" />
     <Content Include="Scripts\json2.js" />

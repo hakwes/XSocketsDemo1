@@ -17,122 +17,9 @@
     }
 }
 @section JavaScript{
-    <script type="text/javascript">
-
-        //KnockoutJS - Our ViewModel
-        var Person = function (id, name, age, gender, genderstring, colorid, color, fruitid, fruit) {
-            this.Id = ko.observable(id);
-            this.Name = ko.observable(name);
-            this.Age = ko.observable(age);
-            this.Gender = ko.observable(gender);
-            this.GenderString = ko.observable(genderstring);
-            this.FavoriteColorId = ko.observable(colorid);
-            this.FavoriteColorName = ko.observable(color);
-            this.FavoriteFruitId = ko.observable(fruitid);
-            this.FavoriteFruitName = ko.observable(fruit);
-        };
-        var ViewModel = {
-            People: ko.observableArray([]),
-            Person: ko.observable(new Person()),
-            AvailableColors: ko.observableArray([]),
-            AvailableFruits: ko.observableArray([]),
-
-            deletePerson: function (p) {
-                //Set the viewmodel person to the one we want to delete...
-                ViewModel.Person(p);
-
-                //Get confirmation
-                $("#personToDelete", "#ModalDeletePerson").text(p.Name());
-                $('#ModalDeletePerson').modal('show');
-            },
-            editPerson: function (p) {
-                //Set the viewmodel person to the one we want to edit
-                ViewModel.Person(p);
-
-                //Show editable modal
-                $('#ModalUpdatePerson').modal('show');
-            },
-
-            //Charts Data
-            GenderStats: {
-                stacked: ko.observable(false),
-                seriesList: ko.observableArray([{ legendEntry: false, data: { x: [], y: []}}])
-            },
-
-            ColorStats: {
-                stacked: ko.observable(false),
-                seriesList: ko.observableArray([{ legendEntry: false, data: { x: [], y: []}}])
-            },
-
-            FruitStats: {
-                stacked: false,
-                seriesList: ko.observableArray([{ legendEntry: false, data: { x: [], y: []}}])
-            },
-
-            //A hack for calculating chartdata...... but... ;)
-            CalculateData: function () {
-
-                //Calc gender and update viewmodel
-                ViewModel.GenderStats.seriesList([{ legendEntry: false, data: { x: ['Female', 'Male'], y: [$.grep(ViewModel.People(), function (n, i) { return (n.GenderString() === "Female"); }).length, $.grep(ViewModel.People(), function (n, i) { return (n.GenderString() === "Male"); }).length]}}]);
-
-                var colorData = { x: [], y: [] };
-                var fruitData = { x: [], y: [] };
-
-                $.each(ViewModel.People(), function () {
-                    //calc colors
-                    if (colorData.x.indexOf(this.FavoriteColorName()) === -1) {
-                        colorData.x.push(this.FavoriteColorName());
-                        colorData.y[colorData.x.indexOf(this.FavoriteColorName())] = 1;
-                    } else {
-                        colorData.y[colorData.x.indexOf(this.FavoriteColorName())]++;
-                    }
-                    //calc ffruits
-                    if (fruitData.x.indexOf(this.FavoriteFruitName()) === -1) {
-                        fruitData.x.push(this.FavoriteFruitName());
-                        fruitData.y[fruitData.x.indexOf(this.FavoriteFruitName())] = 1;
-                    } else {
-                        fruitData.y[fruitData.x.indexOf(this.FavoriteFruitName())]++;
-                    }
-                });
-                //Update ViewModel
-                ViewModel.ColorStats.seriesList([{ legendEntry: false, data: colorData}]);
-                ViewModel.FruitStats.seriesList([{ legendEntry: false, data: fruitData}]);
-            }
-        };
-
-        //Commands that mirror the once in the plugin (for less strings)
-        var Commands = {
-            Person: {
-                Binding: {
-                    GetAll: 'Person.Trigger.GetAll',
-                    Created: 'Person.Trigger.Created',
-                    Updated: 'Person.Trigger.Updated',
-                    Deleted: 'Person.Trigger.Deleted'
-                },
-                Trigger: {
-                    GetAll: 'Person.Bind.GetAll',
-                    Create: 'Person.Bind.Create',
-                    Update: 'Person.Bind.Update',
-                    Delete: 'Person.Bind.Delete'
-                }
-            },
-            Color: {
-                Binding: {
-                    GetAll: 'Color.Trigger.GetAll'
-                }
-            },
-            Fruit: {
-                Binding: {
-                    GetAll: 'Fruit.Trigger.GetAll'
-                }
-            },
-            Global: {
-                Trigger: {
-                    Init: 'Global.Bind.Init'
-                }
-            }
-        };
-
+    <script src="/js/ViewModel.js" type="text/javascript"></script>
+    <script src="/js/Commands.js" type="text/javascript"></script>
+    <script type="text/javascript">             
         var ws = null;
         //Doc Ready
         $(function () {
@@ -224,15 +111,15 @@
             });
 
 
-            ////////////////////////
-            // GUI Events
-            ////////////////////////
+            /////////////////////////////////////
+            // GUI Events triggered by user
+            /////////////////////////////////////
             $('#savePerson').live('click', function (e) {
                 e.preventDefault();
                 var json = {
                     Name: $('#addPersonName', '#ModalAddPerson').val(),
                     Age: parseInt($('#addPersonAge', '#ModalAddPerson').val()),
-                    Gender: parseInt($('input:radio[name=gender]:checked', '#ModalAddPerson').val()),
+                    Gender: parseInt($('input:radio[name=genderadd]:checked', '#ModalAddPerson').val()),
                     FavoriteFruitId: parseInt($('#addPersonFruit', '#ModalAddPerson').val()),
                     FavoriteColorId: parseInt($('#addPersonColor', '#ModalAddPerson').val())
                 };
@@ -435,9 +322,9 @@
                 Gender</label>
             <div class="controls">
                 <label for="addPersonGenderMale">
-                    Male</label><input type="radio" checked id="addPersonGenderMale" name="gender" value="0" />
+                    Male</label><input type="radio" checked="checked" id="addPersonGenderMale" name="genderadd" value="0" />
                 <label for="addPersonGenderFemale">
-                    Female</label><input type="radio" id="addPersonGenderFemale" name="gender" value="1" />
+                    Female</label><input type="radio" id="addPersonGenderFemale" name="genderadd" value="1" />
             </div>
         </div>
         <div>
@@ -490,10 +377,9 @@
                 Gender</label>
             <div class="controls">
                 <label for="updatePersonGenderMale">
-                    Male</label><input type="radio" checked id="updatePersonGenderMale" name="gender"
-                        value="0" />
+                    <input type="radio" data-bind="checked: Gender" id="updatePersonGenderMale" name="genderupdate" value="0" />Male</label>
                 <label for="updatePersonGenderFemale">
-                    Female</label><input type="radio" id="updatePersonGenderFemale" name="gender" value="1" />
+                    <input type="radio" data-bind="checked: Gender" id="updatePersonGenderFemale" name="genderupdate" value="1" />Female</label>
             </div>
         </div>
         <div>
